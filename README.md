@@ -3,8 +3,8 @@
 
 <!-- TODO: Make templates public -->
 <!-- TODO: Data directory in base. ==> !.gitignore -->
-<!-- TODO: Link organisational readme to github pages -->
-<!-- TODO: Cross link organisations -->
+<!-- TODO: Link organizational readme to github pages -->
+<!-- TODO: Cross link organizations -->
 
 ## Support disclaimer
 
