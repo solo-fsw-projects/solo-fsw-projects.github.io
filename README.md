@@ -1,5 +1,3 @@
-# Introduction
-
 > **Note**:
 > This page is work in progress!
 
@@ -7,8 +5,6 @@
 <!-- TODO: Data directory in base. ==> !.gitignore -->
 <!-- TODO: Link organisational readme to github pages -->
 <!-- TODO: Cross link organisations -->
-
-This page provides
 
 ## Support disclaimer
 
@@ -48,7 +44,25 @@ Cloning a repository by using GitHub Desktop is easier. Go to `file > Clone repo
 
 ![2](./media/cloning2.png)
 
+Once you have cloned a git repository, it is very easy to keep it up to date with its online counterpart. CLI users need to use the command `git pull`, while GitHub Desktop users need to press the `Fetch origin` button
+
 ##### Making changes to a cloned repository
+
+> **Note**: We advise branching out before adding, committing and pushing any changes you make. This will be explained in the next section: [Using branches](#using-branches)
+
+If you wish to make changes to a cloned repository, you can simply change your local copy. Git will track and list your changes. CLI users can use `git status` to see their changes files. GitHub desktop lists them on the left side of the screen.
+
+![3](./media/status.png)
+
+In order to make your changes permanent (add them to the git source control history) we need to stage them, and them commit them to the repository. CLI users can stage and commit changes with (a combination of) the following commands:
+
+```bash
+git add .  # This adds all edited files to the staging area
+git add example/README.md  # This only adds README.md from the directory "example" to the staging area
+git commit -m "COMMIT MESSAGE"  # This commits all files in the staging area to the repository. They are annotated with the COMMIT MESSAGE
+```
+
+GitHub desktop also uses this workflow, but it is streamlined a little. By using the checkboxes in the "status panel", you can choose which files are to be added to the staging area. The summary field should then be used to write a commit message, and 
 
 ##### Using branches
 
