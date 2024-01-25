@@ -44,7 +44,11 @@ Cloning a repository by using GitHub Desktop is easier. Go to `file > Clone repo
 
 ![2](./media/cloning2.png)
 
-Once you have cloned a git repository, it is very easy to keep it up to date with its online counterpart. CLI users need to use the command `git pull`, while GitHub Desktop users need to press the `Fetch origin` button
+Once you have cloned a git repository, it is very easy to keep it up to date with its online counterpart. CLI users need to use the command `git pull`, while GitHub Desktop users need to press the `Fetch origin` button, which will change into a `Pull origin` button if changes were detected. Pressing this button will update your local repository.
+
+![4](./media/fetch.png)
+
+![5](./media/pull.png)
 
 ##### Making changes to a cloned repository
 
