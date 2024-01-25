@@ -4,33 +4,33 @@
 > This page is work in progress!
 
 <!-- TODO: Make templates public -->
-<!-- Data directory in base. ==> !.gitignore -->
-<!-- Link organisational readme to github pages -->
-<!-- Cross link organisations -->
+<!-- TODO: Data directory in base. ==> !.gitignore -->
+<!-- TODO: Link organisational readme to github pages -->
+<!-- TODO: Cross link organisations -->
 
 This page provides
 
 ## Support disclaimer
 
-Source control threat
+In general, SOLO will only support software under source control, which is to say, software that can be acquired by using git.
 
-In general, SOLO will release software under the GNUGPL3 license, and media under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Generally speaking, SOLO will release software under the [GNU GPL v3.0 license](https://www.gnu.org/licenses/gpl-3.0.html), media under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), and hardware under the [CERN Open Hardware Licence Version 2 - Strongly Reciprocal license](https://spdx.org/licenses/CERN-OHL-S-2.0.html).
 
 ## Usage
 
-Pointers and guidelines for usage
+### GitHub
 
-### Github
+SOLO uses two github organisations. The solo-fsw organisation contains internal projects (not for specific research groups), while the solo-fsw-projects organisation contains projects done for or in collaboration with specific researcher(s) / reasearch groups.
 
-Github houses repositories. SOlo has two organisations. Naming conventions
+The repositories in both organisations follow the naming convention `<Project name/description>-<Date/Year if applicable>`. The solo-fsw-projects repos are further pre-pended with `<Lab/section/institute>-<PI/lead-researcher if applicable>-`. The clauses are written using lower-case letters and numbers. Underscores are used as spaces within clauses (snake_case). Dashes are used to separate clauses.
 
-Basic guide to git usage can be found here
-
-Few functionalities we advise using are explained below.
+This section will introduce conventions for using some basic git functionalities and explain usage of the provided templates. A more basic explanation of git can be found [here](https://www.freecodecamp.org/news/git-and-github-for-beginners/) (or [here](https://marklodato.github.io/visual-git-guide/index-en.html) or [here](https://learngitbranching.js.org/)).
 
 #### Github usage
 
-Github desktop
+For day to day git usage, we recommend using [GitHub Desktop](https://desktop.github.com/). GitHub Desktop is a graphical interface for git usage, which makes git usage more approachable for beginners.
+
+
 
 Clone
 Branch
@@ -89,9 +89,9 @@ The remainder of this README file contains a few notes on repository naming conv
 
 ## Naming conventions
 
-SOLO uses two github organisations. The solo-fsw organisation contains internal projects (not for specific research groups), while the solo-fsw-projects organisation contains projects done for or in collaboration with specific researcher(s) / reasearch groups.
+.
 
-The repositories in both organisations follow the naming convention `<Project name/description>-<Date/Year if applicable>`. The solo-fsw-projects repos are further pre-pended with `<Lab/section/institute>-<PI/lead-researcher if applicable>-`. The clauses are written using lower-case letters and numbers. Underscores are used as spaces within clauses (snake_case). Dashes are used to separate clauses.
+
  
 ### Examples in solo-fsw-projects
 
