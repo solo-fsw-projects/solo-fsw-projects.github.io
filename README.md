@@ -1,4 +1,59 @@
-# Base repository template
+# Introduction
+<!-- 
+==> Public templates
+
+- Template
+    - Base and fork and links
+    - Descriptions
+- Support
+    - Disclaimer
+        - Source control threat
+        - License
+            - In general, SOLO will release software under the GNUGPL3 license, and media under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- Usage
+    - Github specific
+        - Github desktop
+        - Clone
+        - Branch
+        - etc.
+    - Python specific
+        - Vscode
+        - Spyder
+        - Conda
+        - pip
+
+Organistaion level github list of projects? ==> js
+
+Base repo: Metadata file (project-metadata.yml)
+- PI
+- Researchers
+- Lab
+- Unit
+- Institute
+- Faculty
+- Entity
+- StartTime
+- EndTime
+- Status
+- ProjectName
+- ProjectDesc
+- SupportStaff
+- SoloProjectOwner
+- ResearchProjectOwner
+
+Explain these fields in the github pages
+YML explanation
+
+Unit list: official shorthand.
+
+Data directory in base. ==> !.gitignore
+
+Link organisational readme to github pages
+
+Cross link organisations -->
+
+
+# BLA
 
 This repository specifies the most basic structure of repositories used by SOLO. The other repository templates are extensions on this base template. Media files for this README can be found in the `readme-media` directory.
 
