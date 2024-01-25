@@ -1,30 +1,49 @@
 # Introduction
-<!-- 
-==> Public templates
 
-- Template
-    - Base and fork and links
-    - Descriptions
-- Support
-    - Disclaimer
-        - Source control threat
-        - License
-            - In general, SOLO will release software under the GNUGPL3 license, and media under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-- Usage
-    - Github specific
-        - Github desktop
-        - Clone
-        - Branch
-        - etc.
-    - Python specific
-        - Vscode
-        - Spyder
-        - Conda
-        - pip
+> **Note**:
+> This page is work in progress!
 
-Organistaion level github list of projects? ==> js
+<!-- TODO: Make templates public -->
+<!-- Data directory in base. ==> !.gitignore -->
+<!-- Link organisational readme to github pages -->
+<!-- Cross link organisations -->
 
-Base repo: Metadata file (project-metadata.yml)
+This page provides
+
+## Support disclaimer
+
+Source control threat
+
+In general, SOLO will release software under the GNUGPL3 license, and media under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+## Usage
+
+Pointers and guidelines for usage
+
+### Github
+
+Github houses repositories. SOlo has two organisations. Naming conventions
+
+Basic guide to git usage can be found here
+
+Few functionalities we advise using are explained below.
+
+#### Github usage
+
+Github desktop
+
+Clone
+Branch
+
+etc.
+
+#### Template usage
+
+We created a few templates for repositories, explained here.
+
+SOLO repositories should contain a project-metadata.yml file with the following fields
+
+<!-- Base repo: Metadata file (project-metadata.yml) -->
 - PI
 - Researchers
 - Lab
@@ -41,20 +60,29 @@ Base repo: Metadata file (project-metadata.yml)
 - SoloProjectOwner
 - ResearchProjectOwner
 
-Explain these fields in the github pages
-YML explanation
+### Python
 
-Unit list: official shorthand.
+Python is a very commonly used programming language. Below are a few pointers for workflow, packages, etc.
 
-Data directory in base. ==> !.gitignore
+vscode
+spyder
+conda
+pip
 
-Link organisational readme to github pages
+## References
 
-Cross link organisations -->
+Few references that might come in handy
+
+### Unit shorthand
+
+Official shorthand for the different units we deal with.
+
+### Project list
+
+Organistaion level github list of projects? ==> js from metadata files
 
 
-# BLA
-
+<!-- 
 This repository specifies the most basic structure of repositories used by SOLO. The other repository templates are extensions on this base template. Media files for this README can be found in the `readme-media` directory.
 
 The remainder of this README file contains a few notes on repository naming conventions, and a support disclaimer.
@@ -83,4 +111,4 @@ The repositories in both organisations follow the naming convention `<Project na
 What follows is a disclaimer regarding SOLO support for (mainly software) projects. We advise adding it to the root README of projects in order to encourgae researchers to use git, which in turn makes support in software development easier.
 
 ### Disclaimer
-SOLO project support often includes support in the development of software. We wish to limit this support to software that is being kept under version control (read: software that uses git) in order to make support easier. As such, if your software is not under version control, we will not offer support for it.
+SOLO project support often includes support in the development of software. We wish to limit this support to software that is being kept under version control (read: software that uses git) in order to make support easier. As such, if your software is not under version control, we will not offer support for it. -->
