@@ -90,11 +90,19 @@ We advise creating a new branch for each feature you wish to implement. However,
 
 #### Template usage
 
-We created a few templates for repositories, explained here.
+In order to standardize the structure of SOLO repositories, we created a few template repositories.
 
-SOLO repositories should contain a project-metadata.yml file with the following fields
+The most basic repository template is called [solo-base_repo_template](https://github.com/solo-fsw-projects/solo-base_repo_template). This template contains the bare minimum structure we expect to find in a repository, which is:
 
-<!-- Base repo: Metadata file (project-metadata.yml) -->
+- A *README* file for writing documentation / additional explanation about the project
+- A *LICENCE* file containing the [GNU GPL v3.0 licence](https://www.gnu.org/licenses/gpl-3.0.html)
+- A *.gitignore* file for specifying files that are to be ignored by git (like, for example, data files)
+- A *readme-media* directory for including media in the README file
+<!-- TODO: Metadata.yml file -->
+
+<!-- SOLO repositories should contain a project-metadata.yml file with the following fields
+
+Base repo: Metadata file (project-metadata.yml)
 - PI
 - Researchers
 - Lab
@@ -109,11 +117,13 @@ SOLO repositories should contain a project-metadata.yml file with the following 
 - ProjectDesc
 - SupportStaff
 - SoloProjectOwner
-- ResearchProjectOwner
+- ResearchProjectOwner -->
+
+The base template was extended into two other templates, each with a specific purpose in mind. The [solo-python_package_repo_template](https://github.com/solo-fsw-projects/solo-python_package_repo_template) contains additional structure for creating (and distributing) a python project for pip using GitHub. The [solo-software_hardware_repo_template](https://github.com/solo-fsw-projects/solo-software_hardware_repo_template) contains additional structure aimed at projects involving both software and hardware.
 
 ### Python
 
-Python is a very commonly used programming language. Below are a few pointers for workflow, packages, etc.
+Python is a very commonly used programming language. Below, we give a few pointers for the use of python.
 
 vscode
 spyder
