@@ -40,15 +40,15 @@ Where the example link is replaced with the link you found on GitHub.
 
 Cloning a repository by using GitHub Desktop is easier. Go to `file > Clone repository` and then select the correct repository. Pressing the `clone` button will then clone that repository.
 
-![1](./media/cloning1.png)
+![Cloning a repository from GitHub Desktop](./media/cloning1.png)
 
-![2](./media/cloning2.png)
+![Selecting which repository to clone in GitHub Desktop](./media/cloning2.png)
 
 Once you have cloned a git repository, it is very easy to keep it up to date with its online counterpart. CLI users need to use the command `git pull`, while GitHub Desktop users need to press the `Fetch origin` button, which will change into a `Pull origin` button if changes were detected. Pressing this button will update your local repository.
 
-![4](./media/fetch.png)
+![Fetching from GitHub Desktop](./media/fetch.png)
 
-![5](./media/pull.png)
+![Pulling from GitHub Desktop](./media/pull.png)
 
 ##### Making changes to a cloned repository
 
@@ -56,7 +56,7 @@ Once you have cloned a git repository, it is very easy to keep it up to date wit
 
 If you wish to make changes to a cloned repository, you can simply change your local copy. Git will track and list your changes. CLI users can use `git status` to see their changes files. GitHub desktop lists them on the left side of the screen.
 
-![3](./media/status.png)
+![Seeing the repository status from GitHub Desktop](./media/status.png)
 
 In order to make your changes permanent (add them to the git source control history) we need to stage them, and them commit them to the repository. CLI users can stage and commit changes with (a combination of) the following commands:
 
@@ -84,7 +84,7 @@ Once you are finished in a branch, you can combine it into another branch (usual
 
 In GitHub Desktop, the branching operations can be found by extending the `Current branch` menu.
 
-![6](./media/branching.png)
+![Branching from GitHub Desktop](./media/branching.png)
 
 We advise creating a new branch for each feature you wish to implement. However, this is more a preference / standard and is far from a strict requirement.
 
@@ -207,35 +207,3 @@ Official shorthand for the different units we deal with.
 <!-- TODO: Optional -->
 <!-- ### Project list -->
 <!-- Organization level GitHub list of projects? → JS from metadata files -->
-
-
-<!-- 
-This repository specifies the most basic structure of repositories used by SOLO. The other repository templates are extensions on this base template. Media files for this README can be found in the `readme-media` directory.
-
-The remainder of this README file contains a few notes on repository naming conventions, and a support disclaimer.
-
-## Naming conventions
-
-.
-
-
- 
-### Examples in solo-fsw-projects
-
-- copan-juan_perea-manometer
-- copan-fabiola_diana-prisoners_dilemma-2023
-- copan-fabiola_diana-julia_folz-pdt_converter-2023
-- prsm-josi_marschall-bodhi
-- prsm-lowlands-2023
- 
-### Examples in solo-fsw
-
-- digitimer-ds-controller
-- python-markers
-
-## Support disclaimer
-
-What follows is a disclaimer regarding SOLO support for (mainly software) projects. We advise adding it to the root README of projects in order to encourgae researchers to use git, which in turn makes support in software development easier.
-
-### Disclaimer
-SOLO project support often includes support in the development of software. We wish to limit this support to software that is being kept under version control (read: software that uses git) in order to make support easier. As such, if your software is not under version control, we will not offer support for it. -->
