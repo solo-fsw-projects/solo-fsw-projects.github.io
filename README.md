@@ -125,22 +125,29 @@ The base template was extended into two other templates, each with a specific pu
 
 Python is a very commonly used programming language. Below, we give a few pointers for the use of python.
 
-vscode
-spyder
-conda
-pip
+#### Code editors
+
+With regard to code editors, we advise the usage of either [Visual Studio Code](https://code.visualstudio.com/download) (vscode) or [Spyder](https://www.spyder-ide.org/). We advise vscode because of its extensibility and its integration with the IPython kernel, while we advise Spyder because of its ease of use with Anaconda.
+
+#### Packaging
+
+We advise the use of either the _pip_ or _conda_ package manager.
+
+<!-- TODO: User guide -->
 
 ## References
 
-Few references that might come in handy
+A few lists, tables, or other references that might come in handy.
 
 ### Unit shorthand
 
+<!-- TODO -->
+
 Official shorthand for the different units we deal with.
 
-### Project list
-
-Organization level GitHub list of projects? → JS from metadata files
+<!-- TODO: Optional -->
+<!-- ### Project list -->
+<!-- Organization level GitHub list of projects? → JS from metadata files -->
 
 
 <!-- 
