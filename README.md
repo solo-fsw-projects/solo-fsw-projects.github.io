@@ -1,11 +1,6 @@
 > **Note**:
 > This page is work in progress!
 
-<!-- TODO: Make templates public -->
-<!-- TODO: Data directory in base. ==> !.gitignore -->
-<!-- TODO: Link organizational readme to github pages -->
-<!-- TODO: Cross link organizations -->
-
 ## Support disclaimer
 
 In general, SOLO will only support software under source control, which is to say, software that can be acquired by using git.
@@ -16,7 +11,7 @@ Generally speaking, SOLO will release software under the [GNU GPL v3.0 licence](
 
 ### GitHub
 
-SOLO uses two GitHub organizations. The solo-fsw organization contains internal projects (not for specific research groups), while the solo-fsw-projects organization contains projects done for or in collaboration with specific researcher(s) / research groups.
+SOLO uses two GitHub organizations. The [solo-fsw](https://github.com/solo-fsw) organization contains internal projects (not for specific research groups), while the [solo-fsw-projects](https://github.com/solo-fsw-projects) organization contains projects done for or in collaboration with specific researcher(s) / research groups.
 
 The repositories in both organizations follow the naming convention `<Project name/description>-<Date/Year if applicable>`. The solo-fsw-projects repos are further prepended with `<Lab/section/institute>-<PI/lead-researcher if applicable>-`. The clauses are written using lower-case letters and numbers. Underscores are used as spaces within clauses (snake_case). Dashes are used to separate clauses.
 
@@ -98,26 +93,7 @@ The most basic repository template is called [solo-base_repo_template](https://g
 - A *LICENCE* file containing the [GNU GPL v3.0 licence](https://www.gnu.org/licenses/gpl-3.0.html)
 - A *.gitignore* file for specifying files that are to be ignored by git (like, for example, data files)
 - A *readme-media* directory for including media in the README file
-<!-- TODO: Metadata.yml file -->
-
-<!-- SOLO repositories should contain a project-metadata.yml file with the following fields
-
-Base repo: Metadata file (project-metadata.yml)
-- PI
-- Researchers
-- Lab
-- Unit
-- Institute
-- Faculty
-- Entity
-- StartTime
-- EndTime
-- Status
-- ProjectName
-- ProjectDesc
-- SupportStaff
-- SoloProjectOwner
-- ResearchProjectOwner -->
+- A *metadata.yml* file containing a _YAML_ format for providing metadata about the project
 
 The base template was extended into two other templates, each with a specific purpose in mind. The [solo-python_package_repo_template](https://github.com/solo-fsw-projects/solo-python_package_repo_template) contains additional structure for creating (and distributing) a python project for pip using GitHub. The [solo-software_hardware_repo_template](https://github.com/solo-fsw-projects/solo-software_hardware_repo_template) contains additional structure aimed at projects involving both software and hardware.
 
