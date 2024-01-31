@@ -131,9 +131,68 @@ With regard to code editors, we advise the usage of either [Visual Studio Code](
 
 #### Packaging
 
-We advise the use of either the _pip_ or _conda_ package manager.
+We advise the use of either the _pip_ or _conda_ package manager. The usage of anaconda virtual environments is recommended.
 
-<!-- TODO: User guide -->
+In order to create an anaconda environment, simply use the following command (replacing `ENVIRONMENT_NAME` with the desired environment name):
+
+```bash
+conda create --name ENVIRONMENT_NAME
+```
+
+Packages often recommend a specific python version. If you want to change the python version used for the creation of the virtual environment, the following command can be used:
+
+```bash
+conda create --name ENVIRONMENT_NAME python=VERSION
+```
+
+This command will create a virtual environment. That environment can then be activated by using the command:
+
+```bash
+conda activate ENVIRONMENT_NAME
+```
+
+After activating the environment, packages can be installed into it by using either pip or conda:
+
+```bash
+conda install PACKAGE_NAME
+pip install PACKAGE_NAME
+```
+
+The conda command is advised over `pip install PACKAGE_NAME`, since this allows anaconda to track package versions. If you need to use `pip` for a certain install, ensure this is the last package you install, since the conda will sometimes fail to install new packages after pip was used.
+
+When installing packages, the `-c` flag can be used to specify the origin of the package. An example is given below:
+
+```bash
+conda install -c CHANNEL_NAME PACKAGE_NAME
+```
+
+Often used channels are `conda-forge` and `cogsci`.
+
+Sometimes packages can be installed straight from GitHub. This requires the usage of pip with the command:
+
+```bash
+pip install git+GITHUB_REPO_LINK
+```
+
+You can see what packages (and package versions) are installed in a specific environment by using the command:
+
+```bash
+conda list
+```
+
+Adding a package name after the `conda list` command will trigger a search for that specific package, only listing that package and/or packages with similar names.
+
+The active anaconda environment can be converted into a `.yml` file using the command:
+
+```bash
+conda env export > FILENAME.yml
+```
+
+`environment.yml` files can be used to create new anaconda environments and are therefore the recommended way to clone virtual environments. When using an `environment.yml` file, an anaconda environment can be created as follows:
+
+```bash
+conda create -f PATH/TO/FILE/environment.yml 
+```
 
 ## References
 
