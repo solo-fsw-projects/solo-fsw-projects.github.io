@@ -66,9 +66,27 @@ git add example/README.md  # This only adds README.md from the directory "exampl
 git commit -m "COMMIT MESSAGE"  # This commits all files in the staging area to the repository. They are annotated with the COMMIT MESSAGE
 ```
 
-GitHub desktop also uses this workflow, but it is streamlined a little. By using the checkboxes in the "status panel", you can choose which files are to be added to the staging area. The summary field should then be used to write a commit message, and 
+GitHub desktop also uses this workflow, but it is streamlined, since adding files to the working area is included in committing them. By using the checkboxes in the "status panel", you can choose which files are to be added to the staging area. The summary field should then be used to write a commit message, and the `Commit to <BRANCHNAME>` button can then be used to commit the changes.
 
 ##### Using branches
+
+When making changes to a repository, we advise you to create a branch. Branches provide a way of keeping different changes separated, and provide an easy way to revert changes in case of unexpected consequences.
+
+By default, your repository will have one branch (usually called `main`). The important CLI commands for using branches are:
+
+```bash
+git branch BRANCH_NAME  # Create a new branch
+git checkout BRANCH_NAME  # Switch to a branch
+git checkout -b BRANCH_NAME  # Create a new branch and imedeately switch to it
+```
+
+Once you are finished in a branch, you can combine it into another branch (usually `main`) by using the `git merge` command from the branch that you want to merge. Checking your current branch can be done through `git status`.
+
+In GitHub Desktop, the branching operations can be found by extending the `Current branch` menu.
+
+![6](./media/branching.png)
+
+We advise creating a new branch for each feature you wish to implement. However, this is more a preference / standard and is far from a strict requirement.
 
 #### Template usage
 
