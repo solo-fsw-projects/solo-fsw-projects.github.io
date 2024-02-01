@@ -176,9 +176,25 @@ A few lists, tables, or other references that might come in handy.
 
 ### Unit shorthand
 
-<!-- TODO -->
-
 Official shorthand for the different units we deal with.
+
+
+| Abbreviation | Dutch unit name                                    | English unit name                              |
+| ------------ | -------------------------------------------------- | ---------------------------------------------- |
+| IPW          | Instituut Pedagogische Wetenschappen               | Institute of Education and Child Studies       |
+| FGJ          | Forensische gezinspedagogiek en jeugdhulpverlening | Forensic Family and Youth Care Studies         |
+| L&GO         | Leer- en gedragsproblemen in het onderwijs         | Learning and Behaviour Problems in Education   |
+| NPOS         | Neuropedagogiek en ontwikkelingsstoornissen        | Clinical Neurodevelopmental Sciences           |
+| ONWS         | Onderwijswetenschappen                             | Educational Sciences                           |
+| O&O (IPW)    | Opvoeding en ontwikkeling                          | Parenting, Child Care and Development         |
+| OMS          | Onderzoeksmethoden en statistiek                   | Research Methods and Statistics                |
+| PSY          | Psychologie                                        | Psychology                                     |
+| COG          | Cognitieve Psychologie                             | Cognitive Psychology                           |
+| GMN          | Gezondheids-, Medische en Neuropsychologie         | Health, Medical and Neuropsychology            |
+| KP           | Klinische Psychologie                              | Clinical Psychology                            |
+| MS           | Methodologie en Statistiek                         | Methodology and Statistics                     |
+| O&O (PSY)    | Ontwikkelings- en Onderwijspsychologie             | Developmental and Educational Psychology       |
+| SE&O         | Sociale, Economische en Organisatiepsychologie     | Social, Economic and Organizational Psychology |
 
 <!-- TODO: Optional -->
 <!-- ### Project list -->
