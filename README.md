@@ -53,7 +53,7 @@ If you wish to make changes to a cloned repository, you can simply change your l
 
 ![Seeing the repository status from GitHub Desktop](./media/status.png)
 
-In order to make your changes permanent (add them to the git source control history) we need to stage them, and them commit them to the repository. CLI users can stage and commit changes with (a combination of) the following commands:
+In order to make your changes permanent (add them to the git source control history) we need to stage them, and commit them to the repository. CLI users can stage and commit changes with (a combination of) the following commands:
 
 ```bash
 git add .  # This adds all edited files to the staging area
@@ -72,7 +72,7 @@ By default, your repository will have one branch (usually called `main`). The im
 ```bash
 git branch BRANCH_NAME  # Create a new branch
 git checkout BRANCH_NAME  # Switch to a branch
-git checkout -b BRANCH_NAME  # Create a new branch and imedeately switch to it
+git checkout -b BRANCH_NAME  # Create a new branch and immediately switch to it
 ```
 
 Once you are finished in a branch, you can combine it into another branch (usually `main`) by using the `git merge` command from the branch that you want to merge. Checking your current branch can be done through `git status`.
