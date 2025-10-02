@@ -1,112 +1,58 @@
-> **Note**:
-> This page is work in progress!
+# Technical Support Disclaimer
+The [SOLO FSW](https://github.com/solo-fsw) and [SOLO FSW Projects](https://github.com/solo-fsw-projects) organizations are maintained by the Lab and Research Support teams of SOLO department at Leiden University's Social and Behavioural Sciences faculty. Please visit our [wiki](https://researchwiki.solo.universiteitleiden.nl/) for information about the [teams](https://researchwiki.solo.universiteitleiden.nl/xwiki/wiki/researchwiki.solo.universiteitleiden.nl/view/Support/About%20Us/) and about our [support policy](https://researchwiki.solo.universiteitleiden.nl/xwiki/wiki/researchwiki.solo.universiteitleiden.nl/view/Support/Support%20Policy/).
 
-## Support disclaimer
+> **Note**: SOLO will only provide support for projects kept under source control, when applicable. As such, when projects are delivered via GitHub, collaborators are required to keep their changes under source control if continued support is desired.
 
-In general, SOLO will only support software under source control, which is to say, software that can be acquired by using git.
+Unless otherwise specified, SOLO releases software under the [GNU GPL v3.0 license](https://www.gnu.org/licenses/gpl-3.0.html), media under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), and hardware under the [CERN Open Hardware License Version 2 - Strongly Reciprocal license](https://spdx.org/licenses/CERN-OHL-S-2.0.html).
 
-Generally speaking, SOLO will release software under the [GNU GPL v3.0 licence](https://www.gnu.org/licenses/gpl-3.0.html), media under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), and hardware under the [CERN Open Hardware Licence Version 2 - Strongly Reciprocal licence](https://spdx.org/licenses/CERN-OHL-S-2.0.html).
+# Using GitHub and GitHub Desktop
+Basic explanations of git and its core concepts can be found [here](https://www.freecodecamp.org/news/git-and-github-for-beginners/) (or [here](https://marklodato.github.io/visual-git-guide/index-en.html) or [here](https://learngitbranching.js.org/)).
 
-## Usage
+For most users, we strongly recommend using [GitHub Desktop](https://desktop.github.com/), a very user-friendly graphical interface for git.
 
-### GitHub
-
-SOLO uses two GitHub organizations. The [solo-fsw](https://github.com/solo-fsw) organization contains internal projects (not for specific research groups), while the [solo-fsw-projects](https://github.com/solo-fsw-projects) organization contains projects done for or in collaboration with specific researcher(s) / research groups.
-
-The repositories in both organizations follow the naming convention `<Project name/description>-<Date/Year if applicable>`. The solo-fsw-projects repos are further prepended with `<Lab/section/institute>-<PI/lead-researcher if applicable>-`. The clauses are written using lower-case letters and numbers. Underscores are used as spaces within clauses (snake_case). Dashes are used to separate clauses.
-
-This section will introduce conventions for using some basic git functionalities and explain usage of the provided templates. A more basic explanation of git can be found [here](https://www.freecodecamp.org/news/git-and-github-for-beginners/) (or [here](https://marklodato.github.io/visual-git-guide/index-en.html) or [here](https://learngitbranching.js.org/)).
-
-#### GitHub usage
-
-For day to day git usage, we recommend using [GitHub Desktop](https://desktop.github.com/). GitHub Desktop is a graphical interface for git usage, which makes git more approachable for beginners. Nevertheless, the explanation below will also provide CLI commands.
-
-##### Cloning a repository
-
+## Cloning a Repository
 In order to use a repository under version control, one must first clone it, which, in essence, creates a copy of the repository on your local machine (called the local repository), which can then be used to track modifications on the online repository (called the remote repository).
 
-Cloning a repository by using the CLI involves going to the repository's webpage, copying the link, and using it in the following command:
-
-```bash
-git clone https://github.com/AUTHOR/REPO_NAME.git
-```
-
-Where the example link is replaced with the link you found on GitHub.
-
-Cloning a repository by using GitHub Desktop is easier. Go to `file > Clone repository` and then select the correct repository. Pressing the `clone` button will then clone that repository.
+To clone a repository using GitHub Desktop go to `file > Clone repository` and then select the correct repository. Pressing the `clone` button will then clone that repository.
 
 ![Cloning a repository from GitHub Desktop](./media/cloning1.png)
 
 ![Selecting which repository to clone in GitHub Desktop](./media/cloning2.png)
 
-Once you have cloned a git repository, it is very easy to keep it up to date with its online counterpart. CLI users need to use the command `git pull`, while GitHub Desktop users need to press the `Fetch origin` button, which will change into a `Pull origin` button if changes were detected. Pressing this button will update your local repository.
+Once you have cloned a git repository, it is very easy to keep it up to date with its online counterpart. To do this using GitHub Desktop, press the `Fetch origin` button, which will change into a `Pull origin` button if changes were detected. Pressing this button will update your local repository.
 
 ![Fetching from GitHub Desktop](./media/fetch.png)
 
 ![Pulling from GitHub Desktop](./media/pull.png)
 
-##### Making changes to a cloned repository
+## Editing a Cloned Repository
 
-> **Note**: We advise branching out before adding, committing and pushing any changes you make. This will be explained in the next section: [Using branches](#using-branches)
+> **Note**: We advise making a new branch before adding, committing and pushing any changes you make. This will be explained in the next section: [Using Branches](#using-branches)
 
-If you wish to make changes to a cloned repository, you can simply change your local copy. Git will track and list your changes. CLI users can use `git status` to see their changes files. GitHub desktop lists them on the left side of the screen.
+If you wish to make changes to a cloned repository, you can simply change your local copy. Git will track and list your changes, which GitHub Desktop lists on the left side of the screen.
 
 ![Seeing the repository status from GitHub Desktop](./media/status.png)
 
-In order to make your changes permanent (add them to the git source control history) we need to stage them, and commit them to the repository. CLI users can stage and commit changes with (a combination of) the following commands:
+In order to make your changes permanent (add them to the git source control history) we need to select (aka _stage_) the modified files, _commit_ those changes, and _push_ them to the remote repo. In GitHub desktop, enabling files to be committed (aka staged) is done using the checkboxes in the "status panel", which are all enabled by default. The summary field should then be used to write a commit message, and the `Commit to <BRANCHNAME>` button can then be used to commit the changes to the local repo. Once the local repo features commits not on the remote, the `push origin` button will appear, which can be used to push the local changes to the remote repo on GitHub. This will allow other collaborators to pull those changes to their local copies.
 
-```bash
-git add .  # This adds all edited files to the staging area
-git add example/README.md  # This only adds README.md from the directory "example" to the staging area
-git commit -m "COMMIT MESSAGE"  # This commits all files in the staging area to the repository. They are annotated with the COMMIT MESSAGE
-```
-
-GitHub desktop also uses this workflow, but it is streamlined, since adding files to the working area is included in committing them. By using the checkboxes in the "status panel", you can choose which files are to be added to the staging area. The summary field should then be used to write a commit message, and the `Commit to <BRANCHNAME>` button can then be used to commit the changes.
-
-##### Using branches
-
+## Using branches
 When making changes to a repository, we advise you to create a branch. Branches provide a way of keeping different changes separated, and provide an easy way to revert changes in case of unexpected consequences.
 
-By default, your repository will have one branch (usually called `main`). The important CLI commands for using branches are:
-
-```bash
-git branch BRANCH_NAME  # Create a new branch
-git checkout BRANCH_NAME  # Switch to a branch
-git checkout -b BRANCH_NAME  # Create a new branch and immediately switch to it
-```
-
-Once you are finished in a branch, you can combine it into another branch (usually `main`) by using the `git merge` command from the branch that you want to merge. Checking your current branch can be done through `git status`.
-
-In GitHub Desktop, the branching operations can be found by extending the `Current branch` menu.
+By default, your repository will have one branch (usually called `main`). However, software delivered by SOLO may be in different branches (e.g. development) depending on the stage of the project. In GitHub Desktop, the branching operations can be found by extending the `Current branch` menu.
 
 ![Branching from GitHub Desktop](./media/branching.png)
 
 We advise creating a new branch for each feature you wish to implement. However, this is more a preference / standard and is far from a strict requirement.
 
-#### Template usage
+# Python
+Many of SOLO's software projects are written in Python and make use of the conda environment management system.
 
-In order to standardize the structure of SOLO repositories, we created a few template repositories.
+With regards to opening and/or editing the Python source files, for most users, we advise using [Visual Studio Code](https://code.visualstudio.com/download) (aka vscode) due to its ease of use,  extensibility and good compatibility with conda and the iPython kernel.
 
-The most basic repository template is called [solo-base_repo_template](https://github.com/solo-fsw-projects/solo-base_repo_template). This template contains the bare minimum structure we expect to find in a repository, which is:
+To generate the correct environment in which to run the Python code, you must first install [Anaconda](https://www.anaconda.com/download/success). Then, use the environment definition file (a .yml file) provided in the repo to generate the environment.
 
-- A *README* file for writing documentation / additional explanation about the project
-- A *LICENCE* file containing the [GNU GPL v3.0 licence](https://www.gnu.org/licenses/gpl-3.0.html)
-- A *.gitignore* file for specifying files that are to be ignored by git (like, for example, data files)
-- A *readme-media* directory for including media in the README file
-- A *metadata.yml* file containing a _YAML_ format for providing metadata about the project
 
-The base template was extended into two other templates, each with a specific purpose in mind. The [solo-python_package_repo_template](https://github.com/solo-fsw-projects/solo-python_package_repo_template) contains additional structure for creating (and distributing) a python project for pip using GitHub. The [solo-software_hardware_repo_template](https://github.com/solo-fsw-projects/solo-software_hardware_repo_template) contains additional structure aimed at projects involving both software and hardware.
-
-### Python
-
-Python is a very commonly used programming language. Below, we give a few pointers for the use of python.
-
-#### Code editors
-
-With regard to code editors, we advise the usage of either [Visual Studio Code](https://code.visualstudio.com/download) (vscode) or [Spyder](https://www.spyder-ide.org/). We advise vscode because of its extensibility and its integration with the IPython kernel, while we advise Spyder because of its ease of use with Anaconda.
-
-#### Packaging
-
+## Pip and Conda CLI Commands
 We advise the use of either the _pip_ or _conda_ package manager. The usage of anaconda virtual environments is recommended.
 
 In order to create an anaconda environment, simply use the following command (replacing `ENVIRONMENT_NAME` with the desired environment name):
@@ -170,14 +116,11 @@ conda env export > FILENAME.yml
 conda create -f PATH/TO/FILE/environment.yml 
 ```
 
-## References
+# Contributing to SOLO FSW and SOLO FSW Projects
+## Naming Conventions
+Repositories in both organizations should follow the naming convention `<Project name/description>-<Date/Year if applicable>`. The solo-fsw-projects repos are further prepended with `<Lab/section/institute>-<PI/lead-researcher if applicable>-`. The names should contain only lower-case letters, numbers and dashes.
 
-A few lists, tables, or other references that might come in handy.
-
-### Unit shorthand
-
-Official shorthand for the different units we deal with.
-
+The official shorthands for all the research units for which SOLO provides support is presented below.
 
 | Abbreviation | Dutch unit name                                    | English unit name                              |
 | ------------ | -------------------------------------------------- | ---------------------------------------------- |
@@ -186,7 +129,7 @@ Official shorthand for the different units we deal with.
 | L&GO         | Leer- en gedragsproblemen in het onderwijs         | Learning and Behaviour Problems in Education   |
 | NPOS         | Neuropedagogiek en ontwikkelingsstoornissen        | Clinical Neurodevelopmental Sciences           |
 | ONWS         | Onderwijswetenschappen                             | Educational Sciences                           |
-| O&O (IPW)    | Opvoeding en ontwikkeling                          | Parenting, Child Care and Development         |
+| O&O (IPW)    | Opvoeding en ontwikkeling                          | Parenting, Child Care and Development          |
 | OMS          | Onderzoeksmethoden en statistiek                   | Research Methods and Statistics                |
 | PSY          | Psychologie                                        | Psychology                                     |
 | COG          | Cognitieve Psychologie                             | Cognitive Psychology                           |
@@ -196,6 +139,16 @@ Official shorthand for the different units we deal with.
 | O&O (PSY)    | Ontwikkelings- en Onderwijspsychologie             | Developmental and Educational Psychology       |
 | SE&O         | Sociale, Economische en Organisatiepsychologie     | Social, Economic and Organizational Psychology |
 
-<!-- TODO: Optional -->
-<!-- ### Project list -->
-<!-- Organization level GitHub list of projects? → JS from metadata files -->
+
+## Templates
+In order to standardize the structure of SOLO repositories, we created a few template repositories.
+
+The most basic repository template is called [solo-base_repo_template](https://github.com/solo-fsw-projects/solo-base_repo_template). This template contains the bare minimum structure we expect to find in a repository, which is:
+
+- A *README* file for writing documentation / additional explanation about the project
+- A *LICENSE* file containing the [GNU GPL v3.0 license](https://www.gnu.org/licenses/gpl-3.0.html)
+- A *.gitignore* file for specifying files that are to be ignored by git (like, for example, data files)
+- A *readme-media* directory for including media in the README file
+- A *metadata.yml* file containing a _YAML_ format for providing metadata about the project
+
+The base template was extended into two other templates, each with a specific purpose in mind. The [solo-python_package_repo_template](https://github.com/solo-fsw-projects/solo-python_package_repo_template) contains additional structure for creating (and distributing) a python project for pip using GitHub. The [solo-software_hardware_repo_template](https://github.com/solo-fsw-projects/solo-software_hardware_repo_template) contains additional structure aimed at projects involving both software and hardware.
